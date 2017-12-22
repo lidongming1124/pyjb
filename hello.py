@@ -1,7 +1,5 @@
 # /usr/bin/env python
 # -*-  coding:utf -8 -*-
-
-#李东
 #iter  迭代
 # i1=type('dfdfdfd');
 # i2=cmp(x,y) 函数用于比较2个对象，如果 x < y 返回 -1, 如果 x == y 返回 0, 如果 x > y 返回 1。
