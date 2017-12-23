@@ -1,0 +1,51 @@
+git init #初始化
+git config --global user.name 'Donogming Li' #配置用户名
+git config --global user.email 'lidongming1124@126.com'#配置邮箱
+登录用户根目录下 (/Users/lidongming) .gitconfig 是隐藏文件  ll -a 可以看到
+cat  .gitconfig  #可以看到刚配置
+
+
+git项目目录下  进入.git    cat config 
+
+可以设置 项目变量
+git config user.name 'ldm'
+git config user.email 'lidogming1124@126.com'
+
+
+git 有三个区域
+1、repository  空仓库通过 git init  创建的空的仓库将来所有代码都放这名字叫.git
+
+2、working directory（工作区）
+hello.py   helloword.py  ....等文件
+3、staging area/Index （工作文件有个状态叫区状态，区索引）【用户输入  git add 后进入  次区，然后git commit进入  repository】
+
+git commit -a -m ''  ===  git add  + git commit -m ''
+
+如果    某个文件删除了只要 .git 不丢
+git checkout -f HEAD
+
+git hash-object 文件
+得到文件的hash 值
+
+
+git object
+
+一个对象的内容 取决对象的类型    类型不同 对象也不同
+
+
+三种类型
+1、blob
+叶子节点 是真正用于存数据的就是一个文件
+2、tree
+就是一个目录
+3、commit
+就是文件的某一个版本状态永久性写入到数据仓库里
+
+
+
+object  & refrences
+
+
+1、branches
+2、HEAD
+3、Remote branches 远程分支
